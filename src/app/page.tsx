@@ -4,6 +4,7 @@ import { ServiceProvidersSection } from "@/components/service-providers-section"
 import { StatsSection } from "@/components/stats-section";
 import { TeamMembersSection } from "@/components/team-members-section";
 import { LocationSection } from "@/components/location-section";
+import { ProjectsSection } from "@/components/projects-section";
 import { ReviewsSection } from "@/components/reviews-section";
 import { CtaDemoSection } from "@/components/cta-demo-section";
 import { ContactUsSection } from "@/components/contact-us-section";
@@ -31,11 +32,15 @@ export default function Home() {
         <TeamMembersSection />
       </FadeIn>
 
-      <FadeIn delay={500} yOffset={50}>
+      <FadeIn delay={450} yOffset={50}>
         <LocationSection />
       </FadeIn>
+
+      <FadeIn delay={500} yOffset={50}>
+        <ProjectsSection />
+      </FadeIn>
       
-      <FadeIn delay={600}>
+      <FadeIn delay={600} yOffset={50}>
         <ReviewsSection />
       </FadeIn>
       
