@@ -31,6 +31,30 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'scontent.fvns1-1.fna.fbcdn.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent.fvns1-3.fna.fbcdn.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent.fvns1-5.fna.fbcdn.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent.fvns1-2.fna.fbcdn.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'tailark.com',
         port: '',
         pathname: '/**',

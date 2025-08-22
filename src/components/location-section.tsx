@@ -6,14 +6,14 @@ import { DirectionButton } from "./ui/direction-button"
 import { cn } from "@/lib/utils"
 
 export function LocationSection() {
-  const businessAddress = "123 Business St, Tech City, TC 12345"
-  const businessCoords = "40.7128,-74.0060" // Example coordinates (NYC)
+  const businessAddress = "Nakaha No 1, Near Lotus Resorts, Gorakhpur, Uttar Pradesh, India"
+  const businessCoords = "26.7606,83.3732" // Gorakhpur coordinates
   const mapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${businessCoords}&zoom=15&size=600x300&maptype=roadmap&markers=color:red%7C${businessCoords}&key=YOUR_GOOGLE_MAPS_API_KEY`
 
   return (
     <Section 
       title="Find Us" 
-      description="Visit our office or get in touch"
+      description="Visit our office in Gorakhpur or get in touch"
       id="location"
       className="bg-gradient-to-b from-background to-muted/10"
     >
@@ -48,19 +48,15 @@ export function LocationSection() {
             <h3 className="text-2xl font-bold">Our Office</h3>
             <p className="text-muted-foreground flex items-start gap-2">
               <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
-              {businessAddress}
+              Nakaha No 1, Near Lotus Resorts<br />
+              Gorakhpur, Uttar Pradesh, India
             </p>
-          </div>
-
-          <div className="space-y-4">
-            <div className="flex items-center gap-3 p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors">
-              <div className="p-2 rounded-full bg-primary/10 text-primary">
-                <Clock className="w-5 h-5" />
-              </div>
-              <div>
-                <h4 className="font-medium">Working Hours</h4>
-                <p className="text-sm text-muted-foreground">Mon - Fri: 9:00 AM - 6:00 PM</p>
-              </div>
+            <h3 className="text-2xl font-bold mt-8">Business Hours</h3>
+            <div className="space-y-2">
+              <p className="text-muted-foreground flex items-center gap-2">
+                <Clock className="w-5 h-5 text-primary" />
+                Monday - Sunday: 10:00 AM - 8:00 PM
+              </p>
             </div>
 
             <div className="flex items-center gap-3 p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors">
@@ -69,8 +65,12 @@ export function LocationSection() {
               </div>
               <div>
                 <h4 className="font-medium">Call Us</h4>
-                <a href="tel:+1234567890" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  +1 (234) 567-890
+                <a 
+                  href="tel:+919277090470" 
+                  className="hover:text-primary transition-colors flex items-center gap-2"
+                >
+                  <Phone className="w-5 h-5" />
+                  +91 92770 90470
                 </a>
               </div>
             </div>
